@@ -24,11 +24,12 @@ while True:
 
   data = conn.recv(1024)
   print(data.decode())
-  reply = input("")
-  conn.send((reply + "\n".encode())
+  reply = input("") + \n
+  conn.send((reply.encode())
 
   
   
 # Data gets recieved just like before. But we added the reply variable which takes the input of the server, and then the conn.send is sending the encoded reply.
 # REMINDER: Add a new line somehow when doing the conn.send because the client then has to write on the new line afterwards. At first I tried
-# conn.send('\nreply.encode()) But I guess the proper syntax would be like conn.send((reply + "\n".encode())
+# conn.send('\nreply.encode()) -> that does not work. Going to keep trying. 
+# 
