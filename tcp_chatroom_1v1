@@ -1,5 +1,5 @@
 # I actually am taking the concept of the original tcp_server that is another script, and just basically creating a loop (obviously with some help of the internet and AI).
-# Conceptually I'm thinking of taking basically creating a loop somewhere, probably after a listen I'm guessing? Or perhaps the whole thing can go in a loop
+# Conceptually I'm thinking of taking basically creating a loop somewhere, probably after a listen I'm guessing? Or perhaps the whole thing can go in a loop.
 
 
 # Required module for using socket
