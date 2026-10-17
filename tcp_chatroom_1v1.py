@@ -31,5 +31,5 @@ while True:
   
 # Data gets recieved just like before. But we added the reply variable which takes the input of the server, and then the conn.send is sending the encoded reply.
 # REMINDER: Add a new line somehow when doing the conn.send because the client then has to write on the new line afterwards. At first I tried
-# conn.send('\nreply.encode()) -> that does not work. Going to keep trying. 
-# 
+# conn.send('\nreply.encode()) -> that does not work. Going to keep trying. Added + "\n" to the reply which has fixed the issue I guess.
+# The problem is that if you send multiple messages in a row, it kind of breaks it.
