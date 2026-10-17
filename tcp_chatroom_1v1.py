@@ -24,7 +24,7 @@ while True:
 
   data = conn.recv(1024)
   print(data.decode())
-  reply = input("") + \n
+  reply = input("") + "\n"
   conn.send((reply.encode())
 
   
